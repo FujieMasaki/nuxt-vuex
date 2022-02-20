@@ -10,7 +10,7 @@
       <!-- <button v-on:click="$store.dispatch('updateMessageActions')">Update</button> -->
       <!-- storeのactionをよぶにはdispatchを使う -->
       <button v-on:click="$store.dispatch('updateMessageActions','Commit with payload')">Update</button>
-      <!-- storeのactionをよぶにはdispatchを使う -->
+      <!-- storeのactionをよぶにはdispatchメソッドを使う -->
       <!-- 値を渡したいときは第二引数に値を入れるこれをpayloadという -->
     </div>
   </section>

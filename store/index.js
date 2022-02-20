@@ -15,7 +15,7 @@ const createStore = () => {
     actions:{
       updateMessageActions(context,payload) {
         context.commit('updateMessage', payload)
-        // 第一引数にmutationsを呼ぶ
+        // コミットメソッドで第一引数にmutationsを呼ぶ
       }
     }
   })
