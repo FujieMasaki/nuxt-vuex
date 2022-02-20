@@ -8,8 +8,14 @@ const createStore = () => {
       }
     },
     mutations:{
-      updateMessage: function(state, payload) {
-        state.message = payload
+      updateMessage: function(state) {
+        state.message = 'Updated!'
+      }
+    },
+    actions:{
+      updateMessageActions(context) {
+        context.commit('updateMessage','Commit with payload')
+        // 第一引数にmutationsを呼ぶ
       }
     }
   })
